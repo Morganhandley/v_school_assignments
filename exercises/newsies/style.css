@@ -1,0 +1,39 @@
+body {
+    background-image: url("tn1_Newsprint_bwnkk.jpg");
+}
+
+h1 {
+    font-family: "Baskerville";
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: indianred;
+}
+hr {
+    size:10px;
+    color: red;
+}
+img {
+    display:inline-block; width: 25%;
+    margin: 0px 10px 0px 0px;
+}
+
+p {
+   display: inline-block; width: 22%;
+    line-height: 23px;
+    text-align: justify;
+    margin: 0px 0px 0px 10px;
+}
+
+span {
+    color:indianred;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+

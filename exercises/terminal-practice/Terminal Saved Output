@@ -1,0 +1,248 @@
+Last login: Mon Jan  9 11:00:43 on ttys000
+Morgans-MacBook-Pro:~ morganhandley$ pws
+-bash: pws: command not found
+Morgans-MacBook-Pro:~ morganhandley$ pwd
+/Users/morganhandley
+Morgans-MacBook-Pro:~ morganhandley$ ls
+Applications		Downloads		Pictures
+Creative Cloud Files	Library			Public
+Desktop			Movies
+Documents		Music
+Morgans-MacBook-Pro:~ morganhandley$ cd Documents/
+.DS_Store                             V School/
+.localized                            V School 2/
+2017_1_4_Target Red Card Payment.pdf  V School.zip
+Misc/                                 css practice/
+Morgans-MacBook-Pro:~ morganhandley$ cd Documents/
+.DS_Store                             V School/
+.localized                            V School 2/
+2017_1_4_Target Red Card Payment.pdf  V School.zip
+Misc/                                 css practice/
+Morgans-MacBook-Pro:~ morganhandley$ cd Documents/ls
+-bash: cd: Documents/ls: No such file or directory
+Morgans-MacBook-Pro:~ morganhandley$ cd..
+-bash: cd..: command not found
+Morgans-MacBook-Pro:~ morganhandley$ cd ..
+Morgans-MacBook-Pro:Users morganhandley$ mkdir Development
+mkdir: Development: Permission denied
+Morgans-MacBook-Pro:Users morganhandley$ ls
+Guest		Shared		morganhandley
+Morgans-MacBook-Pro:Users morganhandley$ pwd
+/Users
+Morgans-MacBook-Pro:Users morganhandley$ cd Documents/
+-bash: cd: Documents/: No such file or directory
+Morgans-MacBook-Pro:Users morganhandley$ pwd
+/Users
+Morgans-MacBook-Pro:Users morganhandley$ ls
+Guest		Shared		morganhandley
+Morgans-MacBook-Pro:Users morganhandley$ cd ..
+Morgans-MacBook-Pro:/ morganhandley$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+Morgans-MacBook-Pro:/ morganhandley$ pwd
+/
+Morgans-MacBook-Pro:/ morganhandley$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+Morgans-MacBook-Pro:/ morganhandley$ pwd
+/
+Morgans-MacBook-Pro:/ morganhandley$ cd Users/
+Morgans-MacBook-Pro:Users morganhandley$ pwd
+/Users
+Morgans-MacBook-Pro:Users morganhandley$ ls
+Guest		Shared		morganhandley
+Morgans-MacBook-Pro:Users morganhandley$ cd morganhandley/
+Morgans-MacBook-Pro:~ morganhandley$ pwd
+/Users/morganhandley
+Morgans-MacBook-Pro:~ morganhandley$ ls
+Applications		Downloads		Pictures
+Creative Cloud Files	Library			Public
+Desktop			Movies
+Documents		Music
+Morgans-MacBook-Pro:~ morganhandley$ cd Documents/
+Morgans-MacBook-Pro:Documents morganhandley$ mkdir Development
+Morgans-MacBook-Pro:Documents morganhandley$ cd ../V School
+-bash: cd: ../V: No such file or directory
+Morgans-MacBook-Pro:Documents morganhandley$ pwd
+/Users/morganhandley/Documents
+Morgans-MacBook-Pro:Documents morganhandley$ open .Development
+The file /Users/morganhandley/Documents/.Development does not exist.
+Morgans-MacBook-Pro:Documents morganhandley$ pwd
+/Users/morganhandley/Documents
+Morgans-MacBook-Pro:Documents morganhandley$ cd Development/
+Morgans-MacBook-Pro:Development morganhandley$ ../..
+-bash: ../..: is a directory
+Morgans-MacBook-Pro:Development morganhandley$ cd ~
+Morgans-MacBook-Pro:~ morganhandley$ ls
+Applications		Desktop			Downloads		Movies			Pictures
+Creative Cloud Files	Documents		Library			Music			Public
+Morgans-MacBook-Pro:~ morganhandley$ mkdir Dev
+Morgans-MacBook-Pro:~ morganhandley$ cd Dev
+Morgans-MacBook-Pro:Dev morganhandley$ mkdir Assignments
+Morgans-MacBook-Pro:Dev morganhandley$ cd Assignments/
+Morgans-MacBook-Pro:Assignments morganhandley$ cd ../dev
+-bash: cd: ../dev: No such file or directory
+Morgans-MacBook-Pro:Assignments morganhandley$ cd Dev
+-bash: cd: Dev: No such file or directory
+Morgans-MacBook-Pro:Assignments morganhandley$ cd ..Dev
+-bash: cd: ..Dev: No such file or directory
+Morgans-MacBook-Pro:Assignments morganhandley$ cd ~
+Morgans-MacBook-Pro:~ morganhandley$ ls
+Applications		Dev			Library			Pictures
+Creative Cloud Files	Documents		Movies			Public
+Desktop			Downloads		Music
+Morgans-MacBook-Pro:~ morganhandley$ cd Dev
+Morgans-MacBook-Pro:Dev morganhandley$ mkdir Projects
+Morgans-MacBook-Pro:Dev morganhandley$ mkdir Warmups
+Morgans-MacBook-Pro:Dev morganhandley$ ls
+Assignments	Projects	Warmups
+Morgans-MacBook-Pro:Dev morganhandley$ cd Assignments/
+Morgans-MacBook-Pro:Assignments morganhandley$ mkdir terminal-practice
+Morgans-MacBook-Pro:Assignments morganhandley$ ls
+terminal-practice
+Morgans-MacBook-Pro:Assignments morganhandley$ cd terminal-practice
+Morgans-MacBook-Pro:terminal-practice morganhandley$ mkdir dir-one
+Morgans-MacBook-Pro:terminal-practice morganhandley$ mkdir dir-two
+Morgans-MacBook-Pro:terminal-practice morganhandley$ cd dir-one
+Morgans-MacBook-Pro:dir-one morganhandley$ touch index.html
+Morgans-MacBook-Pro:dir-one morganhandley$ touch app.js
+Morgans-MacBook-Pro:dir-one morganhandley$ touch style.jss
+Morgans-MacBook-Pro:dir-one morganhandley$ ls
+app.js		index.html	style.jss
+Morgans-MacBook-Pro:dir-one morganhandley$ cp app.js dir-two
+Morgans-MacBook-Pro:dir-one morganhandley$ cp index.html dir-two
+Morgans-MacBook-Pro:dir-one morganhandley$ cp style.jss dir-two
+Morgans-MacBook-Pro:dir-one morganhandley$ cd dir-two 
+-bash: cd: dir-two: Not a directory
+Morgans-MacBook-Pro:dir-one morganhandley$ cd ../dir-two/
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+Morgans-MacBook-Pro:dir-two morganhandley$ cp dir-one dir-two
+cp: dir-one: No such file or directory
+Morgans-MacBook-Pro:dir-two morganhandley$ pwd
+/Users/morganhandley/Dev/Assignments/terminal-practice/dir-two
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+Morgans-MacBook-Pro:dir-two morganhandley$ cp dir-one/* dir-two/
+cp: directory dir-two does not exist
+Morgans-MacBook-Pro:dir-two morganhandley$ cd..
+-bash: cd..: command not found
+Morgans-MacBook-Pro:dir-two morganhandley$ cd..
+-bash: cd..: command not found
+Morgans-MacBook-Pro:dir-two morganhandley$ cd.. Assignments
+-bash: cd..: command not found
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+Morgans-MacBook-Pro:dir-two morganhandley$ cd ~
+Morgans-MacBook-Pro:~ morganhandley$ pwd
+/Users/morganhandley
+Morgans-MacBook-Pro:~ morganhandley$ ls
+Applications		Dev			Library			Pictures
+Creative Cloud Files	Documents		Movies			Public
+Desktop			Downloads		Music
+Morgans-MacBook-Pro:~ morganhandley$ cd Dev
+Morgans-MacBook-Pro:Dev morganhandley$ ls
+Assignments	Projects	Warmups
+Morgans-MacBook-Pro:Dev morganhandley$ cd Assignments
+Morgans-MacBook-Pro:Assignments morganhandley$ ls
+terminal-practice
+Morgans-MacBook-Pro:Assignments morganhandley$ cd terminal-practice/
+Morgans-MacBook-Pro:terminal-practice morganhandley$ ls
+dir-one	dir-two
+Morgans-MacBook-Pro:terminal-practice morganhandley$ cp dir-one/* dir-two/
+Morgans-MacBook-Pro:terminal-practice morganhandley$ cd dir-two
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+app.js		dir-two		index.html	style.jss
+Morgans-MacBook-Pro:dir-two morganhandley$ rm -RF/Users/morganhandley/Dev/Assignments/terminal-practice/dir-two/dir-two 
+rm: illegal option -- F
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+Morgans-MacBook-Pro:dir-two morganhandley$ rm -Rf /Users/morganhandley/Dev/Assignments/terminal-practice/dir-two/dir-two 
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+app.js		index.html	style.jss
+Morgans-MacBook-Pro:dir-two morganhandley$ nano
+Morgans-MacBook-Pro:dir-two morganhandley$ mv app.js main.js
+Morgans-MacBook-Pro:dir-two morganhandley$ ls
+index.html	main.js		style.jss
+Morgans-MacBook-Pro:dir-two morganhandley$ open.main.js
+-bash: open.main.js: command not found
+Morgans-MacBook-Pro:dir-two morganhandley$ open .main.js
+The file /Users/morganhandley/Dev/Assignments/terminal-practice/dir-two/.main.js does not exist.
+Morgans-MacBook-Pro:dir-two morganhandley$ open .main.js
+The file /Users/morganhandley/Dev/Assignments/terminal-practice/dir-two/.main.js does not exist.
+Morgans-MacBook-Pro:dir-two morganhandley$ nano main.js
+Morgans-MacBook-Pro:dir-two morganhandley$ nano index.html
+
+  GNU nano 2.0.6                           File: index.html                                                   Modified  
+
+<!DOCTYPE html>
+<html>  
+<head>
+<title>Terminal Assignment</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help         ^O WriteOut         ^R Read File        ^Y Prev Page        ^K Cut Text         ^C Cur Pos
+^X Exit             ^J Justify          ^W Where Is         ^V Next Page        ^U UnCut Text       ^T To Spell

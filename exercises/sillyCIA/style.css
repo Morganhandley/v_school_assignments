@@ -1,0 +1,50 @@
+body {
+    background-color: #EBF4FA;
+}
+
+img {
+    float: left;
+    margin: 0px 30px 0px 20px;
+    width: 400px;
+}
+
+h1 {
+    color: darkgreen
+}
+
+.font-family {
+    font-family: Georgia;
+}
+
+.text-align {
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+a:hover {
+    text-decoration: underline
+}
+*/
+
+
+
+.underline-on-hover:hover {
+    text-decoration: underline;
+}
+
+.text-transform {
+    text-transform: uppercase;
+}
+
+
+/*practice header around other stuff to give it specific attributes*/
+
+a:hover

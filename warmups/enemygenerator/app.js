@@ -22,6 +22,7 @@ function typeGenerator(["Ancient Dragon", "Prowler", "Mighty Grunt"]){
     Math.floor(Math.random() * 3)
 }
 
+console.log()
 function hitPointsGenerator(){
     if typeGenerator === "Ancient Dragon"{
         return 

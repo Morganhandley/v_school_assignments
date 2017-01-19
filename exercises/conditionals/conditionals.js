@@ -41,7 +41,7 @@
 
 
     var aSmile = "true";
-    var bSmile = "yes";
+    var bSmile = "false";
 
 if (aSmile === true && bSmile === true) {
     console.log("both")

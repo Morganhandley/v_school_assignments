@@ -31,9 +31,13 @@ p {
     margin: 0px 0px 0px 10px;
 }
 
-span {
+.firstWord {
     color:indianred;
     font-size: 13px;
     letter-spacing: 2px;
 }
 
+span {
+    font-family:cursive;
+    color:darkgreen;
+}

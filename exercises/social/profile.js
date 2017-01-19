@@ -2,7 +2,9 @@ var myprofile = {
     name: "Morgan",
     age: 36,
     introduction: "Hello World",
-
+    changeAge: function(){
+        this.age++; 
+    },
     friends: [
         {
             name: "Maggie",
@@ -19,7 +21,7 @@ var myprofile = {
                     name: "Kip",
                     age: 55,
                     introduction: "Ahoy, matey!",
-                    friends: []
+                    friends: ["Robert", "Jaime"]
             }
             ]
         },
@@ -50,6 +52,8 @@ var myprofile = {
         }
         ]
 
+    
+}
 };
 
 console.log(myprofile.friends[0].friends[1].introduction);

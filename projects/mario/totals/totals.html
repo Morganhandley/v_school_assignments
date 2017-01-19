@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mario's Pest Control</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+ 
+</head>
+
+
+<body>
+
+
+    <div id="goombas" class="goombas">
+        <img src="final_images/goomba_bw.png">
+        <p>Goombas</p>
+        <p>Price: 5 Coins</p>
+        <button id="goombaButton" class="btn btn-primary">Calculate total bill</button>
+        <input id="goombaInput" />
+        <span id="goombaOutput"></span>
+    </div>
+
+    <div id="bobOmbs" class="bobOmbs">
+        <img src="final_images/bob_bw.png">
+        <p>Bob-ombs</p>
+        <p>Price: 7 Coins</p>
+        <button id="bobOmbButton" class="btn btn-success">Calculate total bill</button>
+        <input id="bobOmbInput" />
+        <span id="bobOmbOutput"></span>
+    </div>
+
+    <div id="cheepas" class="cheepas">
+        <img src="final_images/cheepa_bw.png">
+        <p>Cheepas</p>
+        <p>Price: 11 Coins</p>
+        <button id="cheepaButton" class="btn btn-info" href ="totals.html">Calculate total bill</button>
+        <input id="cheepaInput" />
+        <span id="cheepaOutput"></span>
+    </div>
+    <div id="outputbox">
+        <h2>Total Due:</h2>
+        <button id="finalTotalButton" type="button" class ="btn btn-warning">Calculate</button>
+        <span id="finalOutput" class="border-0 rounded"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

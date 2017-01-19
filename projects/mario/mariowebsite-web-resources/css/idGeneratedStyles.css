@@ -1,0 +1,200 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+body {
+	-epub-hyphens:auto;
+}
+div.Basic-Graphics-Frame {
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+}
+p.Basic-Paragraph {
+	color:#000000;
+	font-family:"Minion Pro", serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.ParaOverride-1 {
+	text-align:center;
+}
+span.CharOverride-1 {
+	color:#ffffff;
+	font-family:"DIN Condensed", sans-serif;
+	font-size:90px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-2 {
+	color:#2b2a2b;
+	font-family:"DIN Condensed", sans-serif;
+	font-size:38px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-3 {
+	color:#2b2a2b;
+	font-family:"Arial Rounded MT Bold", sans-serif;
+	font-size:42px;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-4 {
+	color:#0159bd;
+	font-family:"DIN Condensed", sans-serif;
+	font-size:26px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-5 {
+	color:#5cb947;
+	font-family:Arial, sans-serif;
+	font-size:20px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-6 {
+	color:#0159bd;
+	font-family:Arial, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-7 {
+	color:#ffffff;
+	font-family:"DIN Condensed", sans-serif;
+	font-size:23px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-8 {
+	color:#ff001e;
+	font-family:"Brush Script MT", serif;
+	font-size:28px;
+	font-style:normal;
+	font-weight:normal;
+}
+#_idContainer000 {
+	display:inline-block;
+	height:799px;
+	position:relative;
+	width:176px;
+}
+#_idContainer001 {
+	display:inline-block;
+	height:242px;
+	position:relative;
+	width:176px;
+}
+#_idContainer002 {
+	display:inline-block;
+	height:701px;
+	width:1280px;
+}
+#_idContainer003 {
+	display:inline-block;
+	height:93px;
+	overflow:hidden;
+	width:95px;
+}
+#_idContainer005 {
+	display:inline-block;
+	height:93px;
+	width:94px;
+}
+#_idContainer006 {
+	display:inline-block;
+	height:115px;
+	width:99px;
+}
+#_idContainer007 {
+	display:inline-block;
+	height:127px;
+	position:relative;
+	width:1104px;
+}
+#_idContainer008 {
+	display:inline-block;
+	height:242px;
+	position:relative;
+	width:1104px;
+}
+#_idContainer014, #_idContainer018 {
+	display:inline-block;
+	height:84px;
+	position:relative;
+	width:185px;
+}
+#_idContainer023 {
+	display:inline-block;
+	height:792px;
+	width:343px;
+}
+#_idContainer024 {
+	display:inline-block;
+	height:806px;
+	position:relative;
+	width:274px;
+}
+img._idGenObjectAttribute-1 {
+	height:100.00%;
+	min-width:100%;
+	width:100.00%;
+}
+img._idGenObjectAttribute-2 {
+	-ms-transform:translate(0.944%,0.000%) rotate(0.000deg) skew(0.000deg) scale(0.981,0.999);
+	-ms-transform-origin:0% 0%;
+	-webkit-transform:translate(0.944%,0.000%) rotate(0.000deg) skew(0.000deg) scale(0.981,0.999);
+	-webkit-transform-origin:0% 0%;
+	height:100.00%;
+	min-width:100%;
+	transform:translate(0.944%,0.000%) rotate(0.000deg) skew(0.000deg) scale(0.981,0.999);
+	transform:translate(0.944%,0.000%) rotate(0.000deg) skew(0.000deg) scale(0.981,0.999);
+	transform-origin:0% 0%;
+	transform-origin:0% 0%;
+	width:100.00%;
+}
+div._idGenObjectStyleOverride-1 {
+	background-color:#0070e3;
+	border-width:0px;
+}
+div._idGenObjectStyleOverride-2 {
+	background-color:#ff001e;
+	border-width:0px;
+}
+div._idGenObjectStyleOverride-3 {
+	border-width:0px;
+}
+div._idGenObjectStyleOverride-4 {
+	background-color:#5db746;
+	border-width:0px;
+}
+div._idGenObjectStyleOverride-5 {
+	background-color:#000000;
+	border-color:#0159bd;
+	border-style:solid;
+	border-width:1px;
+}
+div._idGenObjectStyleOverride-6 {
+	background-color:#000000;
+	border-width:0px;
+}
+div._idGenObjectLayout-1 {
+	text-align:center;
+}

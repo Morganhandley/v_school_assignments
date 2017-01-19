@@ -5,6 +5,8 @@ body {
 h1 {
     color: #E2E80F;
     letter-spacing: 4px;
+    text-align: center;
+    font-size: 3em;
 }
 
 p {

@@ -1,3 +1,29 @@
+//var uniqueString = "";
+//var duplicateString = "";
+//
+//for (var i = 0; i < inputString.length; i++)
+//    uniqueString += inputString[i];
+//
+//for (var j = 0; j < inputString.length; j++) {
+//    if (inputString[j] = inputString[i]) {
+//        duplicateString += inputString[j];
+//    }
+//}
+//
+//
+//
+//
+//console.log(uniqueString);
+//console.log(duplicateString);
+
+
+
+
+
+
+
+
+
 //var existingString = "aabbccddeeff";
 //
 //var stringToArray = existingString.split(" ")
@@ -25,36 +51,24 @@
 //
 //
 //
-//
+////
 //var str = "How are you doing today?";
 //var res =;
 
+var inputString = "aAaBbbCccdDdeeefffggg";
 
-//1.lowercase letters
- string = str.string.toLowerCase()
-//2.create and empty string for unique letters
- var uniques = "";
-//3. create string for duplicates
- var duplicates = "";
-//4. loop through each letter in lowercase String
- for (var i=0, i < string.length; i++);
-//5. check if the current letter is already in the unique letters string
-// if (uniques.indexOF(string[i]) !==-1) {
-    misfits += string[i];
-}
-    else {
-        uniques += string[i];
+var string = inputString.toLowerCase();
+var uniques = "";
+var duplicates = "";
+
+for (var i = 0; i < string.length; i++);
+if (uniques.indexOF(string[i]) !== -1) {
+    duplicates += string[i];
     }
-}
-// misfits
-//6. put duplicate in string
-//7. put unique into string
-
-function noDupes(string) {
-    
+else {
+    uniques += string[i];
 }
 
 
-
-
-
+console.log(uniques);
+console.log(duplicates);

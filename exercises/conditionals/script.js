@@ -14,12 +14,33 @@
 //console.log(compareInputs());
 
 
-function average(a, b, c, d, e){
-    var array = [a,b,c,d,e];
-    var sum = a + b + c + d + e;
-    
-    var calculateAverage = sum / array;
-    return calculateAverage;
-}
+//function monkeyTrouble(smileA, smileB) {
+//    if (smileA === smileB)
+//        return "We're in trouble";
+//    else return "We're safe!"
+//}
+//
+//console.log(monkeyTrouble(true, false))
 
-console.log(average(77, 76, 85, 92, 100));
+
+
+var d = new Date();
+//var timeOfDay = d.getHours() ;
+var timeOfDay = 12;
+console.log(timeOfDay);
+
+function alphaTheTime() {
+    if (timeOfDay <= 11) {
+        return "Good Morning";
+    } else
+    if (timeOfDay <= 16) {
+            return "Good Afternoon";
+    } else
+    if (timeOfDay <= 24) {
+                return "Good Evening";
+    }
+
+        
+    
+}
+    console.log(alphaTheTime(timeOfDay));

@@ -1,4 +1,4 @@
 V School Assignments  
 ====================
 
-This is the main README file for the ******** PROJECT that I've worked on during my time here at V School. Each of these assignments has a README file that explains the assignment given as well as a summary of what I learned by completing the assignment.  
+This is the main README file for the "ENEMY GENERATOR" warmup"that I've worked on during my time here at V School, in which I created a javascript function that generates random enemies. 

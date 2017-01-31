@@ -1,4 +1,4 @@
 V School Assignments  
 ====================
 
-This is the main README file for the ********  warmup that I've worked on during my time here at V School. Each of these assignments has a README file that explains the assignment given as well as a summary of what I learned by completing the assignment.  
+This is the main README file for the "TIME" warmup that I've worked on during my time here at V School, in which I created a javascript program that outputs the time of day.

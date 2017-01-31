@@ -1,4 +1,4 @@
 V School Assignments  
 ====================
 
-This is the main README file for the ******** PROJECT that I've worked on during my time here at V School. Each of these assignments has a README file that explains the assignment given as well as a summary of what I learned by completing the assignment.  
+This is the main README file for the "NO DUPLICATES" exercise that I've worked on during my time here at V School, in which I created a javascript program that would take a string and output the same string with any duplicated letters removed, as well as a second output that would include all the letters that had been taken out. 

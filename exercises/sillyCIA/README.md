@@ -1,4 +1,4 @@
 V School Assignments  
 ====================
 
-This is the main README file for the ******** PROJECT that I've worked on during my time here at V School. Each of these assignments has a README file that explains the assignment given as well as a summary of what I learned by completing the assignment.  
+This is the main README file for the SILLY CIA PROJECT that I've worked on during my time here at V School. This project introduced me to basic CSS concepts for styling my html.

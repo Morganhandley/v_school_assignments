@@ -1,0 +1,55 @@
+img {
+    width: 100%;
+}
+
+.backbutton {
+    display: inline-block;
+    position: absolute;
+    border: none;
+    opacity: 1;
+    margin 20% 0% 0% 20%;
+    background: none;
+    transition: all 0.3s ease 0s;
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding: 1%;
+    font-family: 'oswald';
+    font-size: 1.3em;
+    z-index: 1;
+       
+    
+}
+
+.backbutton:hover {
+    background: red;
+
+}
+
+a {
+    text-decoration: none;
+    color:red;
+    
+    margin: 0% 0% 0% 30%;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.aboutText {
+    width: 50%;
+    color: white;
+    position: absolute;
+    margin: 3% 0% 0% 9%;
+}
+
+.navbar {
+    width: 100%;
+    height: 23%;
+    background-color: black;
+    opacity: .3;
+    position: absolute;
+    margin: 0% 0% 0% 0%;
+}

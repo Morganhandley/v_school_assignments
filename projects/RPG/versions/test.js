@@ -8,7 +8,7 @@ class Character {
     }
 
     attack(hitpoints) {
-        return hitpoints - this.AttackPower;
+        return hitpoints - this.attackPower;
     }
 }
 
@@ -74,7 +74,7 @@ do {
 }
 while (keyInput.toLowerCase() != "e")
 
-console.log("Thanks for playing!");
+console.log("GAME OVER!");
 
 function GetRandomInRange(start, end) {
     return Math.floor(Math.random() * end) + start;

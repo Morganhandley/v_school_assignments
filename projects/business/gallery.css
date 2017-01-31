@@ -1,0 +1,54 @@
+img {
+    width: 90%;
+    position: static;
+}
+
+img:hover {
+    background: grey;
+}
+
+.backbutton {
+    display: inline-block;
+    border: none;
+    opacity: 1;
+    margin 20% 0% 0% 20%;
+    background: none;
+    transition: all 0.3s ease 0s;
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding: 1%;
+    font-family: 'oswald';
+    font-size: 1.3em;
+    z-index: 1;
+}
+
+.backbutton:hover {
+    background: red;
+}
+
+
+
+.labels {
+    font-family: 'Oswald';
+    color: red;
+    margin-bottom: 10%;
+}
+
+
+
+.pictureButton:hover {
+    background: grey;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.col-sm-4 row-2 {}

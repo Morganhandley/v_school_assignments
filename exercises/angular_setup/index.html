@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Setup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+
+<body ng-controller="MainController" class="container">
+    <div class="row">
+        <div class="col-md-4" ng-repeat="kill in player.kills">
+            <h3>{{ kill.handle }}</h3>
+            <h6>{{ kill.rank }}</h6>
+            <h4>User names:</h4>
+            <ul>
+                <li ng-repeat="handle in kill.clan">{{ handle }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

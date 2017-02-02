@@ -1,27 +1,22 @@
- function battleMode() {
-
-     function randomGenerator(start, end) {
-         return Math.floor(Math.random() * end) + start;
-     }
-
-     var enemy = [
-             new Character("Scary Ghost", 100, 10),
-             new Character("Hungry Wolf", 200, 20),
-             new Character("Angry Ghoul", 300, 30)
-             ];
-
-
-     function Character(name, hitPoints, attackPower) {
-
-         this.name = name;
-         this.hitPoints = hitPoints;
-         this.attackPower = attackPower;
-     }
-
-
-     var createdEnemy = new Character(enemy[randomGenerator(0, 3)]);
-
-
-     console.log(createdEnemy);
-
+ var createdEnemy = {
+     name: "Morgan",
+     hitPoints: 100,
+     attackPower: 200
  }
+
+ function getStats() {
+     console.log('Current Stats:');
+     console.log(createdEnemy.name);
+     console.log(`His hitpoints are ${createdEnemy.hitPoints}`);
+     console.log(`His attack power is ${createdEnemy.attackPower}`);
+ }
+
+
+
+ function damage() {
+     createdEnemy.hitPoints -= 10;
+ }
+
+ damage();
+ getStats();
+

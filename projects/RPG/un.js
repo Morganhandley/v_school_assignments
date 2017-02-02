@@ -9,7 +9,7 @@ var player = readline.question('\nGreetings young adventurer, what is your name?
 var player = {
     name: player,
     hitPoints: 200,
-    attackPower: 30
+    attackPower: 80
 }
 
 var randomGenerator = function (start, end) {
@@ -27,17 +27,10 @@ var enemy = [
 
 
 function Character(name, hitPoints, attackPower) {
-
     this.name = name;
     this.hitPoints = hitPoints;
     this.attackPower = attackPower;
 }
-
-var createdEnemy = new Character(enemy[randomGenerator(0, 3)]);
-
-
-
-
 
 
 //*************************************************
@@ -45,9 +38,9 @@ var createdEnemy = new Character(enemy[randomGenerator(0, 3)]);
 //*************************************************
 
 
-console.log(`\nAh yes... ${player.name} the Great.\nThank you for coming so quickly. We are truly in your debt!\n\nYour starting stats are:`);
+console.log(`\nAh yes... ${player.name} the Great.\nThank you for coming so quickly. We are truly in your debt!\n\nYour starting stats are:\n`);
 console.log(player);
-console.log("Best of Luck!");
+console.log("Best of Luck!\n\n (Just keep walking into the forest until you find monsters!)\n");
 startAdventure();
 
 
@@ -57,7 +50,7 @@ startAdventure();
 
 
 function startAdventure() {
-    var keyStroke = readline.question('Press [w] to walk            [q] to quit \n')
+    var keyStroke = readline.question('Press [w] to walk         [q] to quit \n')
 
     if (keyStroke === "q") {
         thanksForPlaying();
@@ -71,54 +64,83 @@ function startAdventure() {
     }
 }
 
-function battleMode() {
+
+function fightMode(createdEnemy) {
 
 
 
-    console.log('You found:');
-    console.log(createdEnemy.name);
 
-    var fightOrFlight = readline.question('What do you want to do?\n Press [a] to attack and [r] to run             [q] to quit\n');
-    if (fightOrFlight === 'a') {
-        fightMode();
-    } else if (fightOrFlight === 'q') {
+    enemyDamage();
+
+
+    console.log(`ATTACK!! Good hit! Enemy hitpoints: ${enemyDamage()}`)
+    console.log(`${createdEnemy.name} attacked back!`);
+    player.hitPoints = counterAttack(player, enemyAtt);
+
+    fightOrFlight();
+
+
+
+    function enemyDamage() {
+        createdEnemy.hitPoints -= attackPower;
+    }
+
+
+    function counterAttack(player, enemyAttackPower, createdEnemy, createdEnemy) {
+        var enemyAttackPower = randomGenerator(1, createdEnemy.attackPower);
+        player.hitPoints = player.hitPoints -= enemyAttackPower;
+        console.log(`Your hitpoints went down to: ${player.hitPoints}`);
+    }
+
+
+
+    if (player.hitPoints <= 0) {
+        gameOver;
+    } else if (createdEnemy.hitPoints <= 0) {
+        console.log('${createdEnemy} is defeated!')
+        startAdventure();
+    }
+
+}
+
+
+
+function fightOrFlight(createdEnemy, player) {
+    var heartsDesire = readline.question('What do you want to do?\n Press [a] to attack and [r] to run             [q] to quit\n');
+    if (heartsDesire === 'a') {
+        fightMode(createdEnemy);
+    } else if (heartsDesire === 'q') {
         thanksForPlaying();
-    } else if (fightOrFlight === 'r') {
+    } else if (heartsDesire === 'r') {
         var chanceOfEscape = randomGenerator(1, 2);
         if (chanceOfEscape === 1) {
+            console.log("YOU RAN!!!");
             console.log("You got away!");
             startAdventure();
         } else {
-            console.log("You were caught!");
-            fightMode();
-
+            console.log(`YOU RAN!!!`)
+            console.log(`but ${createdEnemy.name} caught you!`);
+            battleMode(createdEnemy);
         }
+
     }
+
 }
 
-function fightMode() {
 
 
-    while (player.hitPoints || createdEnemy.hitPoints > 0) {
-        var attackPower = randomGenerator(1, 30);
-
-        function attack() {
-            createdEnemy.hitPoints -= attackPower;
-
-        }
-        console.log(createdEnemy);
+function battleMode() {
 
 
-        if (player.hitPoints <= 0) {
-            gameOver;
-        } else if (createdEnemy.hitPoints <= 0) {
-            console.log('${createdEnemy} is defeated!')
-            startAdventure();
-        }
-        player.hitPoints = 0;
-    }
-    console.log("Good hit!")
-    console.log(createdEnemy.hitPoints);
+    var createdEnemy = enemy[randomGenerator(0, 3)];
+
+    console.log('You found:');
+    console.log(createdEnemy.name);
+    fightOrFlight(createdEnemy);
+
+
+
+
 }
 
 
@@ -135,4 +157,14 @@ function thanksForPlaying() {
 
 function gameOver() {
     console.log("********* GAME OVER *********");
+}
+
+//*************************************************
+//                   WHILE LOOP
+//*************************************************
+
+
+while (player.hitPoints > 0) {
+
+    var attackPower = randomGenerator(1, 80);
 }

@@ -1,0 +1,81 @@
+body {
+    background-color: #E0D7CF;
+;
+}
+
+.heading-stuff {
+    margin: 5% 7% 7% 10%;
+    border: 3px solid #3B3131;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+
+.title {
+    font-family: 'Barrio';
+    font-size: 9em;
+    color: #3B3131;
+    
+
+.subtext {
+    font-family: cursive;
+    letter-spacing: .1em;
+    margin: 3% 0% 37% 0%;
+}
+
+.inputs {
+
+}
+
+.input-field {
+   
+    height: 2.2em;
+    border-radius: 10px;
+    border: 2px solid #3B3131;
+}
+
+.little-buttons {
+    background-color: #51CBE8;
+}
+
+.main-button {
+    background-color: lightyellow;
+    font-family: cursive;
+    border: 2px solid #3B3131;
+}
+
+.main-button: hover {
+    background: red;
+}
+
+
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: #3B3131;
+    opacity: .4;
+    font-style: italic;
+    
+}
+
+.heading-stuff {
+    padding: .1% 1% 2% 0%;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+/*    color: red;*/
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: red;
+    opacity: 1;
+}

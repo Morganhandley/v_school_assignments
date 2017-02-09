@@ -1,0 +1,9 @@
+body {
+/*    background-color: azure;*/
+}
+
+.completed-todo {
+    text-decoration: line-through;
+    color: darkgray;
+    font-style: italic;
+}

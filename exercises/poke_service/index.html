@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='pokeApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>pokeservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="pokeController">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 header">
+                <h1>Gotta catch em' all!</h1>
+                <p>Helping trainors track their pokeman since 1992</p>
+            </div>
+            <div class="col-sm-6 logo">
+                <img src="images/Pokemon-logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="container input-area">
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="enter pokemon to add or delete from list" ng-model="name">
+
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-success glyphicon glyphicon-plus" ng-click="addPokemon(name)"></button>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-danger glyphicon glyphicon-remove" ng-click="removePokemon(name)"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 listy">
+                <p ng-repeat="x in pokeList">{{x}}</p>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="yodaSpeak">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yoda Speaks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="myController">
+    <div class="container main-block">
+        <h2>Yoda Speak Translator</h2>
+        <div class="input-group">
+            <input type="text" ng-model="phrase" class="form-control" placeholder="type sentence here">
+            <span class="input-group-addon"><button class="btn btn-warning button" id="basic-addon2" type="button" ng-click="translate(phrase)">Translate</button></span>
+        </div>
+    
+    <div class="translation">
+       <p>{{results}}</p>
+    </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

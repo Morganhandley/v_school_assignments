@@ -1,0 +1,9 @@
+h1 {
+    margin-bottom: 20px;
+}
+
+.completed-todo {
+    text-decoration: line-through;
+    color: #777;
+    font-style: italic;
+}

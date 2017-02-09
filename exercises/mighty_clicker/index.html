@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+
+<html lang="en" ng-app="clickerApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mighty Clicker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="clickerController">
+
+
+
+
+    <button type="text" class="btn btn-danger" ng-click="increment(redScore)"ng-switch="redScore" ng-switch-when="90">red</button>
+    <p>{{ redScore }}</p>
+
+    <button type="text" class="btn btn-info" ng-click="decrement(redScore)">blue</button>
+<!--    <p>{{ blueScore }}</p>-->
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="redService.js"></script>
+    <script src ="blueService.js"></script>
+
+
+</body>
+
+</html>

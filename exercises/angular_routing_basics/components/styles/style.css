@@ -1,0 +1,34 @@
+.links {
+    margin-top: 3%;
+}
+
+a {
+    font-family: bungee;
+    color: white;
+    font-size: 2em;
+}
+
+body {
+    background: url(images/Oregonbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Bungee Shade';
+    font-size: 7em;
+    color: darkmagenta;
+}
+
+.flag {
+    opacity: .6;
+    margin-left: 110%;
+}
+
+nav {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2% 0% 0% 0%;
+}

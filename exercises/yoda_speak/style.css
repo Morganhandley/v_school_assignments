@@ -1,0 +1,29 @@
+.main-block {
+    margin-top: 10%;
+}
+
+h2 {
+    color: #5bc0de;
+/*    letter-spacing: .1em;*/
+}
+
+.form-control {
+    font-style: italic;
+    opacity: .6;
+}
+
+.translation {
+    font-family: cursive;
+    color: #DE795B;
+    
+}
+
+p {
+    margin-top: 2.5%;
+    font-size: 1.2em;
+}
+
+.input-group-addon {
+    border: none;
+    padding: 0px;
+}

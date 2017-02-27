@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Directives</title>
+</head>
+
+<body class="container">
+    <div class="row">
+        <div ng-controller="computerPhoneController" ng-repeat="gadget in gadgetComputerOrPhone" class="col-xs-6">
+            <computer-phone></computer-phone>
+        </div>
+        <div ng-controller="everythingElseController" ng-repeat="gadget in gadgetEverythingElse" class="col=xs=6">
+            <everything-else></everything-else>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="directive.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,45 +1,32 @@
 angular.module('clickerApp', [])
 
+.controller('clickerController', ['$scope', 'redService', 'blueService', function ($scope, redService, blueService) {
+
+    $scope.redScore = 100 //redService.redScore;
+    $scope.blueScore = 100 //blueService.blueScore;
 
 
-//.service('blueService', function () {
-//    this.increment = function (blueScore) {
-//        blueScore++
-//        return blueScore;
-//    }
-//    this.decrement = function (blueScore) {
-//        blueScore--
-//        return blueScore;
-//    }
-//})
+    $scope.changeRed = function (red, blue) {
 
-.controller('clickerController', function (redService, $scope) {
+        var newRed = redService.increment(red);
+        var newBlue = blueService.decrement(blue);
+        if (newBlue === 0) {
+            newBlue = blueService.reset(blue)
+        }
 
-    $scope.redScore = 100;
+        $scope.redScore = newRed;
+        $scope.blueScore = newBlue;
 
-
-
-    $scope.increment = function (redScore) {
-        $scope.redScore = redService.increment(redScore);
     }
 
-    $scope.decrement = function (redScore) {
-        $scope.redScore = redService.decrement(redScore);
+    $scope.changeBlue = function (blue, red) {
+        var newBlue = blueService.increment(blue);
+        var newRed = redService.decrement(red);
+        if (newRed === 0) {
+            newRed = redService.reset(red);
+        }
+        $scope.redScore = newRed;
+        $scope.blueScore = newBlue;
+
     }
-
-//    $scope.reset = function (redScore) {
-//            if ($scope.redScore <= 90) {
-//                $scope.redScore = redService.reset(redScore);
-//            }
-//        })
-    
-
-
-    //    $scope.increment = function (blueScore) {
-    //        $scope.blueScore = blueService.increment(blueScore);
-    //    }
-    //
-    //    $scope.decrement = function (blueScore) {
-    //        $scope.blueScore = blueService.decrement(blueScore);
-    //    }
-});
+}]);

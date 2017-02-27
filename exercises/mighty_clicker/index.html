@@ -7,29 +7,33 @@
     <meta charset="UTF-8">
     <title>Mighty Clicker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Fredericka+the+Great|Londrina+Outline|Pompiere" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body ng-controller="clickerController">
+<body ng-controller="clickerController" class="container">
 
+<h1 class="text-center">Mighty Clicker</h1>
 
-
-
-    <button type="text" class="btn btn-danger" ng-click="increment(redScore)"ng-switch="redScore" ng-switch-when="90">red</button>
+<div class="container">
+   <div class="row text-center">
+   <div class="col-sm-6">
+    <button type="text" class="red-button" ng-click="changeRed(redScore, blueScore)">red</button>
     <p>{{ redScore }}</p>
-
-    <button type="text" class="btn btn-info" ng-click="decrement(redScore)">blue</button>
-<!--    <p>{{ blueScore }}</p>-->
-
-
-
-
+    </div>
+    
+    <div class="col-sm-6">
+    <button type="text" class="blue-button" ng-click="changeBlue(blueScore, redScore)">blue</button>
+    <p>{{ blueScore }}</p>
+    </div>
+    </div>
+</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
     <script src="app.js"></script>
-    <script src="redService.js"></script>
-    <script src ="blueService.js"></script>
+    <script src="services/redService.js"></script>
+    <script src ="services/blueService.js"></script>
 
 
 </body>

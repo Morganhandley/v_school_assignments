@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PokeService Practice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="pokeController">
+    <input type="text" ng-model="name">
+    <button class="btn btn-md-success glyphicon glyphicon-plus" ng-click="addPokemon(name)"></button>
+    <button class="btn btn-md-caution glyphicon glyphicon-remove" ng-click="removePokemon(name)"></button>
+    <br>
+    <p ng-repeat="x in pokeList">{{x}}</p>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

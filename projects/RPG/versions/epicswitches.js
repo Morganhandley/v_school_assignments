@@ -110,6 +110,8 @@ function fight() {
             console.log(`You defeated ${enemyFound.name}!`)
             itemGenerator();
             console.log(`Current Items: ${items}`)
+
+            console.log("You gained 50 life points!")
             walkOrQuit();
         } else {
             console.log(`Good Hit!!!- ${currentHitDamage} points! (${enemyFound.name}'s health: ${enemyFound.hitPoints})\n`);

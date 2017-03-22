@@ -1,72 +1,65 @@
-//***********************************************************
-//                CONSTRUCTORS-CREATE PARTIES
-//***********************************************************
-
-function Team(party, population) {
+function CreateTeam(party, population) {
     this.party = party;
     this.population = population;
 }
 
-var penguins = new Team("penguins", 1000000);
+var penguins = new CreateTeam("penguins", 1000000);
+var communists = new CreateTeam("communists", 1000000);
+var isPenguinsAttacking;
 
-var communists = new Team("communists", 1000000);
 
-console.log(penguins);
+function whoStarts() {
+    var coinFlip = Math.floor(Math.random() * (3 - 1) + 1);
 
-//***********************************************************
-//               FLIP COIN - WHO ATTACKS FIRST
-//***********************************************************
-
-//var isPenguinsAttacking; 
-//
-//function whoStarts() {
-//    return Math.floor(Math.random() * 2) + 1;
-//}
-//
-//if (whoStarts() === 1) {
-//    isPenguinsAttacking = true;
-//} else {
-//    isPenguinsAttacking = false;
-//}
-
-function doPenguinsStart() {
-    var randomNumber = Math.floor(Math.random() * 2) + 1;
-    if (randomNumber === 1) {
-        return true;
+    if (coinFlip === 1) {
+        console.log('Penguins attack first');
+        sendNuke(communists, onHit, onMiss);
+        console.log(communists);
     } else {
-        return false;
+        console.log(communists);
+        isPenguinsAttacking = false;
+        console.log('Communists attack first');
+        sendNuke(penguins, onHit, onMiss);
     }
 }
 
-var isPenguinsAttacking = doPenguinsStart();
+whoStarts();
 
-
-//***********************************************************
-//               BATTLE TIME - SENDING NUKES
-//***********************************************************
-
-while (penguins.population > 0 && communists.population > 0) {
-    if (isPenguinsAttacking) {
-        sendNuke(communists, onHit, onMiss)
-    } else {
-        sendNuke(penguins, onHit, onMiss)
-    }
-}
 
 function sendNuke(party, onHit, onMiss) {
-    var hitOrMiss = Math.floor(Math.random() * 2) + 1;
-    var damage = Math.floor(Math.random() * 100000) + 10000;
-
+    console.log(party.party);
+    console.log('sendnuke!!!!');
+    var hitOrMiss = Math.floor(Math.random() * (3 - 1) + 1);
     if (hitOrMiss === 1) {
-        function onHit() {
-            console.log("Attack successful");
-            attacked.population -= damage;
-        }
+        console.log('hit');
+        return onHit(party);
     } else if (hitOrMiss === 2) {
-        function onMiss() {
-            console.log("Attack failed");
-        }
-
-
+        console.log('miss');
+        return onMiss(party);
     }
+}
+
+function onHit(party) {
+    damage = Math.floor(Math.random() * (500000 - 10000) + 10000);
+    party.population -= damage;
+    console.log("Attack successful, " + party.party + "'s population is " + party.population);
+    if (party.population <= 0) {
+        console.log(party.party + "loses");
+        return endGame();
+    };
+    if (party.party === 'penguins') {
+        return sendNuke(communists, onHit, onMiss);
+    } else return sendNuke(penguins, onHit, onMiss);
+}
+
+function onMiss(party) {
+    console.log("Attack failed, " + party.party + "'s population is down to " + party.population);
+    if (party.party === 'penguins') {
+        return sendNuke(communists, onHit, onMiss);
+    } else {
+        return sendNuke(penguins, onHit, onMiss);
+    }
+}
+function endGame() {
+    console.log('game over');
 }

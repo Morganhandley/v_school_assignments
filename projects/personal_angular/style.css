@@ -1,0 +1,8 @@
+.home-page-stuff {
+    display: flex;
+    align-content: center;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}

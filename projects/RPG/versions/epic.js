@@ -7,10 +7,10 @@ var player = {
 };
 
 var enemy = [
-             new Character("Scary Ghost", 100, 70),
-             new Character("Hungry Wolf", 200, 60),
-             new Character("Angry Ghoul", 300, 50)
-             ];
+    new Character("Scary Ghost", 100, 70),
+    new Character("Hungry Wolf", 200, 60),
+    new Character("Angry Ghoul", 300, 50)
+];
 
 var enemyFound;
 
@@ -25,14 +25,14 @@ var items = [];
 function itemGenerator() {
 
     var possibleItems = [
-    "PIECE OF GOLD",
-    "PIECE OF SILVER",
-    "IRON HAMMER",
-    "CLOAK",
-    "MAGIC POTION",
-    "TREASURE MAP",
-    "PAIR OF LEATHER SHOES"
-];
+        "PIECE OF GOLD",
+        "PIECE OF SILVER",
+        "IRON HAMMER",
+        "CLOAK",
+        "MAGIC POTION",
+        "TREASURE MAP",
+        "PAIR OF LEATHER SHOES"
+    ];
     var randomItem = possibleItems[randomGenerator(0, 8)];
 
     console.log(`Item recovered: (${randomItem})`)
@@ -49,18 +49,21 @@ function randomGenerator(start, end) {
 //***************************************************************************//
 
 
-
 player.name = readLine.question('Hello, What is your name?\n');
 
 walkOrQuit();
 
 function walkOrQuit() {
 
-    var answer = readLine.question(`What would you like to do ${player.name}?  (press [w] to walk or [q] to quit)\n`);
+    var answer = readLine.question(`What would you like to do ${player.name}?  (press [w] to walk, [i] for items, or [q] to quit)\n`);
 
     if (answer === 'q') {
         gameOver();
-    } else {
+    } else if (answer === 'i') {
+        console.log(`Current Items: ${[items]}`)
+        walkOrQuit();
+    }
+    else {
         walkAndFindEnemy();
     }
 };
@@ -78,12 +81,9 @@ function walkAndFindEnemy() {
 };
 
 
-
-
 //***************************************************************************//
 //                               Fight ot Run?                               //
 //***************************************************************************//
-
 
 
 function fightOrRun() {
@@ -108,9 +108,10 @@ function fight() {
         itemGenerator();
         console.log(`You have ${items.length} item(s)`)
         console.log(`Current Items: ${[items]}`)
+        console.log('You gained 20 life')
+        player.hitPoints += 20;
         console.log(`Current Health: ${player.hitPoints}`);
         enemyFound.hitPoints = 100;
-        console.log(enemyFound.hitPoints);
         walkOrQuit();
     } else {
         console.log(`Good Hit!!! -${currentHitDamage} points! (${enemyFound.name}'s health: ${enemyFound.hitPoints})\n`);
@@ -136,6 +137,7 @@ function enemyAttack() {
     while (player.hitPoints > 0) {
         player.hitPoints -= enemyHitDamage;
         if (player.hitPoints <= 0) {
+            console.log(`...but ${enemyFound.name} attacked you ${enemyHitDamage} points.`);
             console.log(`${enemyFound.name} defeated you.`)
             gameOver();
         } else {
@@ -145,13 +147,6 @@ function enemyAttack() {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 //***************************************************************************//

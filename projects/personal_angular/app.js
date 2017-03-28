@@ -1,14 +1,15 @@
 var app = angular.module("myApp", ["ngRoute"])
 
-app.controller("myController", function ($scope) {
-    $scope.input = "enter word to translate";
-    $scope.translation = "translated word"
+app.controller("myController", function ($scope, $http) {
+    $scope.home1 = "Use this website to translate words from one language to another";
+    $scope.home2 = '(Just hit the green "Translate" button and have fun!)';
+    $scope.translation = "enter a word, then select languages to be translated from and to";
     $scope.favorites = "list of favorites";
-});
+})
 
-app.config(function($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when("/", {
+        .when("/home", {
             templateUrl: "home.html",
             controller: "myController"
         })
@@ -20,7 +21,9 @@ app.config(function($routeProvider) {
             templateUrl: "favorites.html",
             controller: "myController"
         })
-
-})
+        .otherwise({
+            redirectTo: '/home'
+        })
+}]);
 
 

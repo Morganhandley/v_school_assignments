@@ -1,1 +1,22 @@
-<h2>{{ input }}</h2>
+<h2>Translation Page</h2>
+<h6>{{ translation }}</h6>
+
+<h2 class="home-label">{{ input }}</h2>
+<input ng-model="input" class="home-input" type="text" placeholder="enter word to translate">
+</div>
+
+<div class="dropdown btn">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content" ng-hide="linkSubmit" ng-click="!linkSubmit = linkSubmit">
+        <a href="#">english</a>
+        <a href="#">spanish</a>
+        <a href="#">french</a>
+    </div>
+</div>
+
+<button class="btn" ngclick="sendData(input)">Let's translate!</button>
+
+
+
+
+<button type="button" class="btn btn-lg btn-success center-block showIdeaBox" ng-hide="linkSubmit" ng-click="linkSubmit = !linkSubmit"><span>Submit a new idea.</span></button>

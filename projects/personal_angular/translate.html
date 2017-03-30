@@ -1,22 +1,34 @@
-<h2>Translation Page</h2>
-<h6>{{ translation }}</h6>
+<div class="container">
+    <h2>Translation Page</h2>
+    <h6>{{ translation }}</h6>
 
-<h2 class="home-label">{{ input }}</h2>
-<input ng-model="input" class="home-input" type="text" placeholder="enter word to translate">
-</div>
+    <h2 class="home-label">{{ input }}</h2>
 
-<div class="dropdown btn">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content" ng-hide="linkSubmit" ng-click="!linkSubmit = linkSubmit">
-        <a href="#">english</a>
-        <a href="#">spanish</a>
-        <a href="#">french</a>
+    <div class="row">
+        <div class="col-xs-2">
+            <input ng-model="input" class="home-input" type="text" placeholder="enter word to translate">
+        </div>
+        <div class="dropdown btn btn1 col-xs-2" style="bottom: 11px;">
+            <button onclick="myFunction()" class="dropbtn dropbtn1">translate into</button>
+            <div id="myDropdown" class="dropdown-content" ng-hide="linkSubmit" ng-click="!linkSubmit = linkSubmit">
+                <option>Arabic</option>
+                <option>Chinese</option>
+                <option>English</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Italian</option>
+                <option>Japanese</option>
+                <option>Javanese</option>
+                <option>Latin</option>
+                <option>Portuguese</option>
+                <option>Russian</option>
+                <option>Spanish</option>
+            </div>
+        </div>
+        <div>
+            <button class="dropbtn2 col-xs-2" style="bottom: 4px;">save to favorites</button>
+        </div>
     </div>
-</div>
-
-<button class="btn" ngclick="sendData(input)">Let's translate!</button>
-
-
-
-
-<button type="button" class="btn btn-lg btn-success center-block showIdeaBox" ng-hide="linkSubmit" ng-click="linkSubmit = !linkSubmit"><span>Submit a new idea.</span></button>
+    <div class="row">
+<!--        <ng-view></ng-view>-->
+    </div>
